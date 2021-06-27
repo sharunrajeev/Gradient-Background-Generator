@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradientGen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Poppins:wght@200;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header-text">GradientGen</h1>
+        <div class="line"></div>
+        <label for="color1 color2" class="info-text">Select 2 colours to create a gradient</label for="">
+        <div class="input-box">
+            <input id="color1" name="color1" type="color" value="#00c7a6" onchange="handleChange()">
+            <input id="color2" name="color2" type="color" value="#5b00c4" onchange="handleChange()">
+        </div>
+        <label for="degree" class="info-text">Select an angle</label for=""><br>
+        <input id="degree" name="degree" type="number" value="90" onchange="handleChange()">
+        <h3 id="result" class="info-text">linear-gradient(90deg, #00c7a6, #5b00c4);</h3>
+
+        <footer>
+            <h5>Created with <span style="color: red;">❤</span> by <a href="http://github.com/sharunrajeev">Sharun E
+                    Rajeev</a></h5>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </div>
+</body>
+
+</html>
